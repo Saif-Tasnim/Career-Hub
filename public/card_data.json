@@ -1,0 +1,22 @@
+[
+    {
+        "logo": "../src/assets/accounting.png",
+        "name": "Account & Finance",
+        "jobsAvailable": 120
+    },
+    {
+        "logo": "../src/assets/creative.png",
+        "name": "Creative Design",
+        "jobsAvailable": 75
+    },
+    {
+        "logo": "../src/assets/money.png",
+        "name": "Marketing & Sale",
+        "jobsAvailable": 50
+    },
+    {
+        "logo": "../src/assets/worker.png",
+        "name": "Engineering Job",
+        "jobsAvailable": 90
+    }
+]
