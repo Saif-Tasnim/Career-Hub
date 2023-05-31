@@ -18,7 +18,7 @@ const FeaturedJobs = () => {
             <p className="text-center mt-2 mb-5"> Explore thousands of job opportunities with all the information you need. Its your future
             </p>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6 mt-7">
                 {
                     jobs.map(job => <Job
                         key={job.id}
@@ -26,8 +26,12 @@ const FeaturedJobs = () => {
                     ></Job>)
                 }
             </div>
-
-            <button>See All Jobs</button>
+           <div className="flex justify-center mt-9">
+           <button className="btn-bg w-[174px] h-[65px] mt-11 text-center">See All Jobs</button>
+           </div>
+     
+          
+           
         </div>
     );
 };
