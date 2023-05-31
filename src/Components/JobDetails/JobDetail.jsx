@@ -8,12 +8,11 @@ import 'react-toastify/dist/ReactToastify.css';
 const JobDetail = () => {
     const data = useLoaderData();
 
-    console.log(data);
+    // console.log(data);
 
     const clickApplyBtn = () => {
-       toast.success("Applied Successfully")
+       
 
-       localStorage.setItem("job" , JSON.stringify(data));
     }
 
     return (
