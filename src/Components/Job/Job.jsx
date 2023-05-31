@@ -1,5 +1,6 @@
 import React from 'react';
 import './Job.css';
+import { Link } from 'react-router-dom';
 
 const Job = ({ job }) => {
     const { companyLogo, jobTitle, companyName, remoteOrOnsite, location, fulltimeOrPartTime, salary, } = job;
@@ -31,7 +32,10 @@ const Job = ({ job }) => {
                     Salary : {salary}
                 </div>
             </div>
+            <Link to={`/job/${companyName}`}>
             <button className='w-[160px] btn-bg py-3 px-5'>View Details</button>
+            </Link>
+
         </div>
     );
 };

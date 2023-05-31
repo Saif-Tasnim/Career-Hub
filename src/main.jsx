@@ -12,6 +12,7 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import JobDetail from './Components/JobDetails/JobDetail';
+import loaderData from './Components/loaderData/loaderData';
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,9 @@ const router = createBrowserRouter([
       },
       {
         path: 'job/:jobId',
-        element: <JobDetail></JobDetail>
+        loader: ( {params} ) => loaderData(params.jobId),
+        element: <JobDetail></JobDetail>,
+        
       }
     ]
   }
