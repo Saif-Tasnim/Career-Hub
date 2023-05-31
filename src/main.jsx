@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import Home from '../src/Components/Home/Home';
+import Layout from './Components/Layout/Layout';
 
 import {
   createBrowserRouter,
@@ -12,10 +12,11 @@ import {
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home></Home>,
+    element: <Layout></Layout>,
     children : [
       {
-
+       path:'/',
+       element: <Home></Home>
       }
     ]
   }
