@@ -1,11 +1,20 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import './JobDetails.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const JobDetail = () => {
     const data = useLoaderData();
 
     console.log(data);
+
+    const clickApplyBtn = () => {
+       toast.success("Applied Successfully")
+
+       localStorage.setItem("job" , JSON.stringify(data));
+    }
 
     return (
         <div>
@@ -50,12 +59,10 @@ const JobDetail = () => {
                     </div>
 
                     <div className='mt-3 text-center btn-bg px-4 py-3'>
-                        <button>Apply Now</button>
+                        <button onClick={clickApplyBtn}> Apply Now </button>
+                        <ToastContainer />
                     </div>
                 </div>
-
-
-
 
             </main>
         </div>
