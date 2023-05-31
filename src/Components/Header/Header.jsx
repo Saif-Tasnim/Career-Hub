@@ -5,7 +5,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div className='flex justify-evenly pt-10 pb-4 
-        bg-[#d4c5fc]'>
+        bg-[#F9F9FF]'>
             <div className='font-extrabold text-3xl'> Job Lagbe </div>
             
             <div className='mt-3 text-lg'>

@@ -3,7 +3,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className='bg-[#d4c5fc] pt-11 flex justify-around items-center'>
+        <div className='bg-[#F9F9FF] pt-11 flex justify-around items-center h-[700px]'>
           
            <div className="text w-[550px] h-[570px] ml-36">
                <h1 className='text-6xl line font-bold'>One Step </h1>
@@ -17,7 +17,7 @@ const Banner = () => {
                <button className='mt-8 custom-bg px-7 py-5 text-white text-xl font-bold'>Get Started</button>
            </div>
           
-           <div className="w-[816px] h-[744px] ml-24">
+           <div className="w-[816px] h-[744px] ml-24 mt-10">
             
             <img src="/src/images/hardy.png" alt="" />
             
