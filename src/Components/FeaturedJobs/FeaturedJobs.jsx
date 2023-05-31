@@ -3,6 +3,7 @@ import Job from '../Job/Job';
 
 const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([]);
+    const [btnState , setBtnState] = useState(true);
 
     useEffect(() => {
         fetch('job_data.json')
@@ -10,7 +11,16 @@ const FeaturedJobs = () => {
             .then(data => setJobs(data))
     }, [])
 
-    console.log(jobs);
+    const [showData, setShowData] = useState(false);
+    const mid = showData ? jobs : jobs.slice(0, 4);
+
+    const clickAllBtn = () => {
+        // setShowData(true);
+
+        setShowData(!showData);
+        setBtnState(!btnState);
+
+ }
 
     return (
         <div className='w-3/4 margin'>
@@ -20,18 +30,23 @@ const FeaturedJobs = () => {
 
             <div className="grid grid-cols-2 gap-6 mt-7">
                 {
-                    jobs.map(job => <Job
+                    mid.map(job => <Job
                         key={job.id}
                         job={job}
                     ></Job>)
                 }
             </div>
-           <div className="flex justify-center mt-9">
-           <button className="btn-bg w-[174px] h-[65px] mt-11 text-center">See All Jobs</button>
-           </div>
-     
-          
-           
+
+            <div className="flex justify-center mt-9">
+
+            <button onClick={clickAllBtn} className="btn-bg w-[174px] h-[65px] mt-11 text-center"> 
+                { btnState ? "See All Jobs" : "See Less"}
+                </button>
+            
+            </div>
+
+
+
         </div>
     );
 };

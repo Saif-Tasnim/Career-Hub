@@ -4,7 +4,7 @@ import './Job.css';
 const Job = ({ job }) => {
     const { companyLogo, jobTitle, companyName, remoteOrOnsite, location, fulltimeOrPartTime, salary, } = job;
 
-    console.log(job);
+    // console.log(job);
 
     return (
         <div className='w-[630px] h-[430px] border-2      rounded-xl p-5 mr-6' >
