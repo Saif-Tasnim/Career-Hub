@@ -7,12 +7,12 @@
     {
         "logo": "../src/assets/creative.png",
         "name": "Creative Design",
-        "jobsAvailable": 75
+        "jobsAvailable": "75+"
     },
     {
         "logo": "../src/assets/money.png",
         "name": "Marketing & Sale",
-        "jobsAvailable": 50
+        "jobsAvailable": "50+"
     },
     {
         "logo": "../src/assets/worker.png",
