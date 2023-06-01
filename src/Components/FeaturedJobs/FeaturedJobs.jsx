@@ -24,11 +24,11 @@ const FeaturedJobs = () => {
 
     return (
         <div className='w-3/4 margin'>
-            <h1 className="text-center text-4xl font-bold mb-3"> Featured Jobs </h1>
+            <h1 className="text-center text-xl md:text-4xl font-bold mb-3"> Featured Jobs </h1>
             <p className="text-center mt-2 mb-5"> Explore thousands of job opportunities with all the information you need. Its your future
             </p>
 
-            <div className="grid grid-cols-2 gap-6 mt-7">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-7">
                 {
                     mid.map(job => <Job
                         key={job.id}

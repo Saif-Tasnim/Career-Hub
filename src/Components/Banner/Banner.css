@@ -1,6 +1,9 @@
 .line {
     line-height: 80px;
 }
+.line-sm{
+    line-height: 36px;
+}
 
 .span {
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
