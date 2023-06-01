@@ -7,11 +7,39 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetail = () => {
     const data = useLoaderData();
-
     // console.log(data);
 
     const clickApplyBtn = () => {
-       
+        
+        const exist = localStorage.getItem("jobs");
+        const localData = JSON.parse(exist);
+        //  console.log(localData);
+
+        if (localData) {
+            const found = localData.find(e => e.id === data.id)
+           
+            if(found){
+                toast.warning(`You have already applied in ${data.companyName}`)
+            }
+
+            else {
+                const prev = JSON.parse(exist);
+
+                const array = [...prev, data];
+
+                localStorage.setItem('jobs', JSON.stringify(array));
+                toast.success(`You have successfully applied in ${data.companyName}`);
+            }
+        }
+
+        else {
+            let array = [];
+            array = [...array, data];
+            localStorage.setItem("jobs", JSON.stringify(array));
+            toast.success(`You have successfully applied in ${data.companyName}`);
+
+        }
+
 
     }
 
@@ -24,14 +52,14 @@ const JobDetail = () => {
             <main className='w-3/4 mx-auto mt-32 flex justify-center gap-9 mb-11'>
 
                 <div className=''>
-                    <h1 className='text-xl font-bold mb-4'>Job Description : </h1>
+                    <h1 className='text-xl font-bold mb-4 mt-7'>Job Description : </h1>
                     <p className='mb-4 text-lg ml-5'>{data.jobDescription}</p>
-                    <h1 className='text-xl font-bold mb-4'>Job Responsibility : </h1>
+                    <h1 className='text-xl font-bold mb-4 mt-7'>Job Responsibility : </h1>
                     <p className='mb-4 text-lg ml-5'>{data.jobResponsibility}</p>
-                    <h1 className='text-xl font-bold mb-4'>Educational Requirements :</h1>
+                    <h1 className='text-xl font-bold mb-4 mt-7'>Educational Requirements :</h1>
                     <p className='mb-4 text-lg ml-5'> {data.educationalRequirements} </p>
 
-                    <h1 className='text-xl font-bold mb-4'>Experience :</h1>
+                    <h1 className='text-xl font-bold mb-4 mt-7'>Experience :</h1>
                     <p className='mb-4 text-lg ml-5'> {data.experiences} </p>
                 </div>
 

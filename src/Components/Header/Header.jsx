@@ -6,12 +6,14 @@ const Header = () => {
     return (
         <div className='flex justify-evenly pt-10 pb-4 
         bg-[#F9F9FF]'>
-            <div className='font-extrabold text-3xl'> Job Lagbe </div>
+          
+          <div className='font-extrabold text-3xl'>  
+           <Link to="/"> Job Lagbe  </Link> </div>
             
             <div className='mt-3 text-lg'>
-                <Link className='mr-6'>Statistics</Link>
-                <Link className='mr-6'>Applied Jobs</Link>
-                <Link className='mr-6'>Blogs</Link>
+                <Link to ='/statistics' className='mr-6'>Statistics</Link>
+                <Link to ='/appliedJobs' className='mr-6'>Applied Jobs</Link>
+                <Link to ='/blog' className='mr-6'>Blogs</Link>
             </div>
             <div className='mt-2'>
                 <button className='w-40 h-12 custom-bg text-xl text-white'>Start Applying</button>
