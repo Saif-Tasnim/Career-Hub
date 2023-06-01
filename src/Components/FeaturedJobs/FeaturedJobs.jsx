@@ -28,7 +28,7 @@ const FeaturedJobs = () => {
             <p className="text-center mt-2 mb-5"> Explore thousands of job opportunities with all the information you need. Its your future
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-7">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6 mt-7" id="jobitem">
                 {
                     mid.map(job => <Job
                         key={job.id}
