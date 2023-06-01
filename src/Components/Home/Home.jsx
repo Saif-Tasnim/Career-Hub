@@ -8,7 +8,7 @@ import Header from '../Header/Header';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
+           <Header></Header>
            <Banner></Banner>
            <JobCategory></JobCategory>
            <FeaturedJobs></FeaturedJobs>
