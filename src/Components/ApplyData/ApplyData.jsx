@@ -3,7 +3,7 @@ import './data.css';
 import { Link } from 'react-router-dom';
 
 const ApplyData = ({ data }) => {
-    console.log(data);
+    // console.log(data);
 
     return (
         <div className='flex justify-between border-2 mt-11 p-8 items-center mb-11'>
