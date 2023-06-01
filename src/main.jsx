@@ -14,13 +14,15 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Home></Home>,
-    loader: () => fetch('card_data.json') 
+    loader: () => fetch('card_data.json') ,
+    errorElement: <ErrorPage></ErrorPage>
   },
   {
     path:'/',
@@ -28,21 +30,24 @@ const router = createBrowserRouter([
     children:[
       {
         path: 'statistics',
-        element: <Statistics></Statistics>
+        element: <Statistics></Statistics>,
+        errorElement: <ErrorPage></ErrorPage>
       },
       {
         path: '/appliedJobs',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        errorElement: <ErrorPage></ErrorPage>
       },
       {
         path: 'blog',
-        element: <Blog></Blog>
+        element: <Blog></Blog>,
+        errorElement: <ErrorPage></ErrorPage>
       },
       {
         path: 'job/:jobId',
         loader: ( {params} ) => loaderData(params.jobId),
         element: <JobDetail></JobDetail>,
-        
+        errorElement: <ErrorPage></ErrorPage>
       }
     ]
   }

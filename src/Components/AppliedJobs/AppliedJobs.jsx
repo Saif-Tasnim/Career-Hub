@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ApplyData from '../ApplyData/ApplyData';
+import ErrorPage from '../ErrorPage/ErrorPage';
 
 const AppliedJobs = () => {
     const [job, setJob] = useState([]);
@@ -35,7 +36,7 @@ const AppliedJobs = () => {
                       job ? job.map(j => <ApplyData
                             key={j.id}
                             data={j}
-                        ></ApplyData>) : "You Have Not Apply Any Job"
+                        ></ApplyData>) : <ErrorPage></ErrorPage>
                     }
                 </div>
             </div>
