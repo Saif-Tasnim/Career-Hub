@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "question": "What is a custom hook?",
+        "answer": "A custom hook in React is a JavaScript function that starts with the prefix 'use' and allows you to reuse stateful logic across multiple components."
+    },
+    {
+        "id": 2,
+        "question": "What is useRef?",
+        "answer": "'useRef' is a hook provided by React that returns a mutable ref object. The ref object can hold a value and persists across renders. It is commonly used to access and manipulate DOM elements directly."
+    },
+    {
+        "id": 3,
+        "question": "What is useMemo?",
+        "answer": "'useMemo' is a hook provided by React that allows you to optimize and memoize expensive computations. It memoizes the return value of a function and re-computes it only when the dependencies in the dependency array change."
+    },
+    {
+        "id": 4,
+        "question": "When should you use context API?",
+        "answer": "The Context API in React is useful in scenarios where you need to pass data or state down the component tree to child components without having to explicitly pass props through every intermediate component."
+    }
+]
