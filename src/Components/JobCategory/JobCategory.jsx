@@ -12,7 +12,7 @@ const JobCategory = () => {
             <h2 className='text-center text-4xl font-bold pb-6'>Job Category List</h2>
             <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-            <div className='flex sm:flex-col gap-6 mt-8'>
+            <div className='flex md:flex-row gap-6 mt-8'>
                 {
                     card_data.map(card => <Card
                         key={card.name}
