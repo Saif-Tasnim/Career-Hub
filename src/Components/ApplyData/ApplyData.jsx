@@ -1,14 +1,15 @@
 import React from 'react';
 import './data.css';
+import { Link } from 'react-router-dom';
 
 const ApplyData = ({ data }) => {
     console.log(data);
 
     return (
         <div className='flex justify-between border-2 mt-11 p-8 items-center mb-11'>
-            
+
             <div className='flex gap-7 items-center'>
-                
+
                 {/* image div */}
                 <div>
                     <img className='w-[240px] h-[240px]' src={data.companyLogo} alt="" />
@@ -42,7 +43,12 @@ const ApplyData = ({ data }) => {
 
             </div>
 
-            <button className='w-[150px] h-[50px] see text-white font-bold' > View Details </button>
+            <Link to={`/job/${data.companyName}`}> 
+            
+            <button className='w-[150px] h-[50px] see text-white font-bold'  > View Details </button>
+            
+            </Link>
+
         </div>
     );
 };
