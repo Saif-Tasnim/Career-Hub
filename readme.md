@@ -1,6 +1,6 @@
 # Job Lagbe - A Simple Solutions to find remote or onsite job
 
-Welcome to the Project Name! This project is aimed at [briefly describe the purpose or goal of the project].
+Welcome to the Job Lagbe! This project is aimed at [finding best jobs around you & easy to apply for you in dragon Company ].
 
 ## Live Link
 
