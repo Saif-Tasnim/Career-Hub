@@ -1,14 +1,21 @@
-import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useLoaderData, useParams } from 'react-router-dom';
 import './JobDetails.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 const JobDetail = () => {
-    const data = useLoaderData();
-    // console.log(data);
+    
+    const allData = useLoaderData();
+    const {jobId} = useParams();
+    
+    console.log(allData);
+    console.log(jobId);
 
+    const data = allData.find(d => d.companyName === jobId);
+
+    
     const clickApplyBtn = () => {
         
         const exist = localStorage.getItem("jobs");
@@ -49,7 +56,7 @@ const JobDetail = () => {
                 <h1 className='text-center pt-28 text-4xl font-bold'> Job Details </h1>
             </header>
 
-            <main className='w-3/4 mx-auto mt-32 flex justify-center gap-9 mb-11'>
+            <div className='w-3/4 mx-auto mt-32 flex justify-center gap-9 mb-11'>
 
                 <div className=''>
                     <h1 className='text-xl font-bold mb-4 mt-7'>Job Description : </h1>
@@ -91,7 +98,7 @@ const JobDetail = () => {
                     </div>
                 </div>
 
-            </main>
+            </div>
         </div>
 
     );

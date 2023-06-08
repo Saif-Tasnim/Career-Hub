@@ -19,7 +19,7 @@ const Banner = () => {
 
             <div className="w-[240px] h-[200px] md:w-[500px] md:h-[570px] md:ml-24 md:mt-10">
 
-                <img src="/src/images/hardy.png" alt="" />
+                <img src="https://yt3.googleusercontent.com/7zyj96p9eJNzL2zueYJUOTFdsCvB62qBLKEhPGo42BVKgMKuVqaMjRD8EQ-r66PxrcZS2mxA=s900-c-k-c0x00ffffff-no-rj" alt="" />
 
             </div>
 

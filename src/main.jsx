@@ -7,7 +7,7 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import JobDetail from './Components/JobDetails/JobDetail';
-import loaderData from './Components/loaderData/loaderData';
+
 
 
 import {
@@ -45,8 +45,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'job/:jobId',
-        loader: ( {params} ) => loaderData(params.jobId),
-        element: <JobDetail></JobDetail>,
+        loader: () => fetch('job_data.json'),
+        element: <JobDetail/>,
         errorElement: <ErrorPage></ErrorPage>
       }
     ]
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
+  
    <RouterProvider router={router}></RouterProvider>
    
  

@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+       
+        "companyLogo": "data:image/png;base64,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",
+       
+       
+        "jobTitle": "Software Engineer",
+        "companyName": "Google",
+        "remoteOrOnsite": "Remote",
+        "location": "Any",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$80,000 - $100,000 per month",
+        "jobDescription": "Google is seeking a talented Software Engineer...",
+        "jobResponsibility": "Developing high-quality software...",
+        "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "2+ years of experience in software development",
+        "contactInformation": {
+            "phone": "123-456-7890",
+            "email": "info@abctech.com"
+        }
+    },
+    {
+        "id": 2,
+        "companyLogo": "https://logowik.com/content/uploads/images/tesla.jpg",
+        "jobTitle": "Marketing Specialist",
+        "companyName": "Tesla",
+        "remoteOrOnsite": "Onsite",
+        "location": "New York, NY",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$60,000 - $80,000 per month",
+        "jobDescription": "Tesla is seeking a creative and analytical Marketing Specialist...",
+        "jobResponsibility": "Planning and executing marketing campaigns...",
+        "educationalRequirements": "Bachelor's degree in Marketing or related field",
+        "experiences": "3+ years of experience in marketing",
+        "contactInformation": {
+            "phone": "987-654-3210",
+            "email": "careers@xyzcorp.com"
+        }
+    },
+    {
+        "id": 3,
+        "companyLogo": "https://cdn2.vectorstock.com/i/1000x1000/39/71/swoosh-letter-bd-logo-design-for-business-vector-36593971.jpg",
+        "jobTitle": "Graphic Designer",
+        "companyName": "Logo Design BD",
+        "remoteOrOnsite": "Remote",
+        "location": "Any",
+        "fulltimeOrPartTime": "Part-time",
+        "salary": "$25 - $35 per hour",
+        "jobDescription": "LogoDesignBD is looking for a skilled Graphic Designer...",
+        "jobResponsibility": "Creating visually appealing designs...",
+        "educationalRequirements": "Associate's degree in Graphic Design or related field",
+        "experiences": "2+ years of experience in graphic design",
+        "contactInformation": {
+            "phone": "555-123-4567",
+            "email": "jobs@designco.com"
+        }
+    },
+    {
+        "id": 4,
+        "companyLogo": "https://logowik.com/content/uploads/images/t_netflix-wordmark4555.logowik.com.webp",
+        "jobTitle": "Financial Analyst",
+        "companyName": "Netflix",
+        "remoteOrOnsite": "Onsite",
+        "location": "London, UK",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "£40,000 - £50,000 per month",
+        "jobDescription": "Join our Investment Group as a Financial Analyst...",
+        "jobResponsibility": "Conducting financial analysis and market research...",
+        "educationalRequirements": "Bachelor's degree in Finance or related field",
+        "experiences": "5+ years of experience in financial analysis",
+        "contactInformation": {
+            "phone": "+44 20 1234 5678",
+            "email": "hr@investmentgroup.com"
+        }
+    },
+    {
+        "id": 5,
+        "companyLogo": "https://logowik.com/content/uploads/images/t_massachusett-general-hospital-new5310.jpg",
+        
+        "jobTitle": "Nurse Practitioner",
+        "companyName": "Massachusetts General Hospital",
+        "remoteOrOnsite": "Onsite",
+        "location": "US",
+        "fulltimeOrPartTime": "Full-time",
+        "salary": "$90,000 - $110,000 per month",
+        "jobDescription": "Massachusetts General Hospital is hiring a skilled Nurse Practitioner...",
+        "jobResponsibility": "Providing primary healthcare services...",
+        "educationalRequirements": "Master's degree in Nursing",
+        "experiences": "3+ years of experience as a Nurse Practitioner",
+        "contactInformation": {
+            "phone": "555-987-6543",
+            "email": "recruitment@healthcarecenter.com"
+        }
+    },
+    {
+        "id": 6,
+        "companyLogo": "https://logowik.com/content/uploads/images/t_amazon-black3184.jpg",
+        "jobTitle": "Junior Software Developer",
+        "companyName": "Amazon",
+        "remoteOrOnsite": "Remote",
+        "location": "Any",
+        "fulltimeOrPartTime": "Part-time",
+        "salary": "$15 - $20 per hour",
+        "jobDescription": "Amazon is looking for friendly and empathetic individuals...",
+        "jobResponsibility": "Handling customer inquiries and resolving issues...",
+        "educationalRequirements": "High school diploma or equivalent",
+        "experiences": "1+ year of customer service experience",
+        "contactInformation": {
+            "phone": "800-555-1234",
+            "email": "careers@servicesolutions.com"
+        }
+    }
+]
